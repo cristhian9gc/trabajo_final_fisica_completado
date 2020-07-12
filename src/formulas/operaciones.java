@@ -7,7 +7,7 @@ public class operaciones {
     public double multi;
     public double modulosuma;
     public double moduloA, moduloB;
-    public double vecunitarioA, vecunitarioB;
+    public double vecunitarioA1, vecunitarioA2, vecunitarioB1, vecunitarioB2;
     
     
     public void calsuma(double vx1, double vx2, double vy1, double vy2){
@@ -57,5 +57,13 @@ public class operaciones {
         suma = cuad1 + cuad2;
         
         modulosuma = Math.sqrt(suma);
+    }
+    
+    public void unitario(double vx1, double vx2, double vy1, double vy2){
+        vecunitarioA1 = vx1/moduloA;
+        vecunitarioA2 = vx2/moduloA;
+        
+        vecunitarioB1 = vy1/moduloB;
+        vecunitarioB2 = vy2/moduloB;
     }
 }

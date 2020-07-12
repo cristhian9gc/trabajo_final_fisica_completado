@@ -38,8 +38,6 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         producto = new javax.swing.JTextField();
         ModuloSuma = new javax.swing.JTextField();
-        unitarioB = new javax.swing.JTextField();
-        unitarioA = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         moduloA = new javax.swing.JTextField();
@@ -54,6 +52,16 @@ public class Interfaz extends javax.swing.JFrame {
         restay = new javax.swing.JTextField();
         restax = new javax.swing.JTextField();
         sumax = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        unitarioB1 = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        unitarioA2 = new javax.swing.JTextField();
+        unitarioB2 = new javax.swing.JTextField();
+        unitarioA1 = new javax.swing.JTextField();
         jLabelfrom = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -140,22 +148,14 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("VECTOR UNITARIO B:");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 140, 20));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 130, 20));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("VECTOR UNITARIO A:");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 140, 20));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 130, 20));
         getContentPane().add(producto, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 230, -1));
         getContentPane().add(ModuloSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 170, -1));
-
-        unitarioB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                unitarioBActionPerformed(evt);
-            }
-        });
-        getContentPane().add(unitarioB, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 420, 180, -1));
-        getContentPane().add(unitarioA, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 390, 180, -1));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
@@ -203,6 +203,40 @@ public class Interfaz extends javax.swing.JFrame {
         getContentPane().add(restax, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, 60, -1));
         getContentPane().add(sumax, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 60, -1));
 
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("[");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 440, 10, -1));
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setText(";");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 410, 10, -1));
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("]");
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 10, -1));
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setText(";");
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 450, 10, -1));
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText("]");
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 440, 10, 20));
+        getContentPane().add(unitarioB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 70, -1));
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("[");
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 400, 10, -1));
+        getContentPane().add(unitarioA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 400, 70, -1));
+        getContentPane().add(unitarioB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 440, 70, -1));
+        getContentPane().add(unitarioA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 70, -1));
+
         jLabelfrom.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenFondo/dibujo2.jpg"))); // NOI18N
         getContentPane().add(jLabelfrom, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 390, 488));
 
@@ -212,10 +246,6 @@ public class Interfaz extends javax.swing.JFrame {
     private void vy2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vy2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_vy2ActionPerformed
-
-    private void unitarioBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitarioBActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_unitarioBActionPerformed
 
     private void botoperarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoperarActionPerformed
         double vx10 = Double.parseDouble(vx1.getText());
@@ -229,6 +259,7 @@ public class Interfaz extends javax.swing.JFrame {
         operar.calmoduloB(vy10, vy20);
         operar.calmult(vx10, vx20, vy10, vy20);
         operar.modulosuma(vx10, vx20, vy10, vy20);
+        operar.unitario(vx10, vx20, vy10, vy20);
         
         
         sumax.setText(String.valueOf(operar.sumax));
@@ -243,6 +274,11 @@ public class Interfaz extends javax.swing.JFrame {
         producto.setText(String.valueOf(operar.multi));
         
         ModuloSuma.setText(String.valueOf(operar.modulosuma));
+        
+        unitarioA1.setText(String.valueOf(operar.vecunitarioA1));
+        unitarioA2.setText(String.valueOf(operar.vecunitarioA2));
+        unitarioB1.setText(String.valueOf(operar.vecunitarioB1));
+        unitarioB2.setText(String.valueOf(operar.vecunitarioB2));
     }//GEN-LAST:event_botoperarActionPerformed
 
     /**
@@ -289,7 +325,13 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
@@ -312,8 +354,10 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JTextField sumax;
     private javax.swing.JTextField sumay;
     private javax.swing.JLabel titulo;
-    private javax.swing.JTextField unitarioA;
-    private javax.swing.JTextField unitarioB;
+    private javax.swing.JTextField unitarioA1;
+    private javax.swing.JTextField unitarioA2;
+    private javax.swing.JTextField unitarioB1;
+    private javax.swing.JTextField unitarioB2;
     private javax.swing.JLabel v1;
     private javax.swing.JLabel v2;
     private javax.swing.JTextField vx1;

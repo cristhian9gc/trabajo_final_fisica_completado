@@ -110,6 +110,11 @@ public class Interfaz extends javax.swing.JFrame {
 
         botoperar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         botoperar.setText("Calcular");
+        botoperar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botoperarActionPerformed(evt);
+            }
+        });
         getContentPane().add(botoperar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 150, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -211,6 +216,34 @@ public class Interfaz extends javax.swing.JFrame {
     private void unitarioBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitarioBActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_unitarioBActionPerformed
+
+    private void botoperarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoperarActionPerformed
+        double vx10 = Double.parseDouble(vx1.getText());
+        double vx20 = Double.parseDouble(vx2.getText());
+        double vy10 = Double.parseDouble(vy1.getText());
+        double vy20 = Double.parseDouble(vy2.getText());
+        
+        operar.calsuma(vx10, vx20, vy10, vy20);
+        operar.calresta(vx10, vx20, vy10, vy20);
+        operar.calmoduloA(vx10, vx20);
+        operar.calmoduloB(vy10, vy20);
+        operar.calmult(vx10, vx20, vy10, vy20);
+        operar.modulosuma(vx10, vx20, vy10, vy20);
+        
+        
+        sumax.setText(String.valueOf(operar.sumax));
+        sumay.setText(String.valueOf(operar.sumay));
+        
+        restax.setText(String.valueOf(operar.restax));
+        restay.setText(String.valueOf(operar.restay));
+        
+        moduloA.setText(String.valueOf(operar.moduloA));
+        moduloB.setText(String.valueOf(operar.moduloB));
+        
+        producto.setText(String.valueOf(operar.multi));
+        
+        ModuloSuma.setText(String.valueOf(operar.modulosuma));
+    }//GEN-LAST:event_botoperarActionPerformed
 
     /**
      * @param args the command line arguments

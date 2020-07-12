@@ -37,7 +37,7 @@ public class operaciones {
         cu2 = Math.pow(vy2, 2);
         sum = cu1 + cu2;
         
-        moduloA = Math.sqrt(sum);
+        moduloB = Math.sqrt(sum);
     }
        
     public void calmult(double vx1, double vx2, double vy1, double vy2){
